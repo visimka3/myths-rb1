@@ -1,0 +1,162 @@
+*{
+	padding: 0;
+	margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+h1,h2,h3,p{
+  padding: 0;
+  margin: 0;
+}
+ul,ol{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+header{
+	background-color: #3D2B1F;
+	box-shadow: 0 0 25px black;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+
+}
+.logo>img{
+		position: absolute;
+  margin-top: 5px;
+    width: 100px;
+    
+    background-color: #3D2B1F;
+     border-radius: 15px;
+padding: 10px;
+}
+.menu{
+  display: flex;
+ margin-right: 100px;
+}
+.menu-item{
+  margin-right: 30px;
+  padding: 18px 0;
+}
+.menu-item:last-child{
+  margin: 0;
+}
+.meni-link{
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Roboto';
+}
+
+footer{
+margin-top: 80px;
+
+}
+footer{
+
+	background-color: #3D2B1F;
+	box-shadow: 0 0 25px black;
+
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+
+}
+.footer-nav{
+}
+.footer-nav>li{
+
+	display: inline-block;	
+}
+.footer-nav>li>a{
+    padding-right: 20px;
+    text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+.footer-logo>img{
+	padding: 20px 100px 20px 0px;
+    height: 100px;
+    
+}
+.copyright{
+	color:white;
+}
+.glav{
+	width: 1000px;
+	height: 400px;
+	box-shadow: 0 0 25px black;
+	background-color: #3D2B1F;
+	margin-top: 12%;
+  margin-bottom:10%;
+    margin-right:auto;
+	margin-left:auto;
+	display: flex
+}
+.glav>.logoglav{
+	padding-top: 20px;
+	padding-left: 50px;
+}
+.glav>.logoglav>img{
+    height: 330px;
+}
+.glav>.textglav>p{
+   color: white;
+   font-size: 38px;
+   padding-left: 70px;
+   padding-top:48px;
+   padding-right: 10px;
+}
+body{
+background-color: #497E76;
+ 
+}
+.im{
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+}
+.zyza{
+	width: 800px;
+	height: 500px;
+	border-radius: 25px;
+}
+
+.name{
+	margin-top: 40px;
+	color: #fff;
+	margin-left: 200px;
+	
+}
+.p1{
+	color: #fff;
+	margin-left: 200px;
+	margin-top: 25px;
+	font-size: 22px;
+}
+.p2{
+	line-height: 26px;
+	
+	margin-top: 15px;
+display: flex;
+
+margin-left: 200px;
+	color: #fff;
+	font-size: 20px;
+	width: 850px;
+	
+}

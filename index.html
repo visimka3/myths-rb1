@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<title>Мифы РБ</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/javascript" href="js/main.js">
+	<link rel="stylesheet" type="text/css" href="style/mainkart.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/demo-page.css" rel="stylesheet">
+  	<link rel="stylesheet" href="css/style-modal.css" rel="stylesheet">
+  </head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<img src="img/лого2.png" alt="logo">
+				</div>
+				<nav>
+					<ul class="menu">
+			<li class="menu-item"><a href="/index.html" class="meni-link">Главная</a></li>
+						<li class="menu-item"><a href="pages/osk1.html" class="meni-link">Зюзя</a></li>
+						<li class="menu-item"><a href="pages/osk2.html" class="meni-link">Свитезянка</a></li>
+						<li class="menu-item"><a href="pages/osk3.html" class="meni-link">Баламутень</a></li>
+						<li class="menu-item"><a href="pages/osk4.html" class="meni-link">Подпечник</a></li>
+						<li class="menu-item"><a href="pages/osk5.html" class="meni-link">Цмок</a></li>
+						<li class="menu-item"><a href="pages/osk6.html" class="meni-link">Лесавки</a></li>
+						<li class="menu-item"><a href="info.html" class="meni-link">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+    <!--monstrik!-->
+  
+  <!--monstrik!-->
+	</header>
+                                          <!--header 
+                                          body   !-->
+	<section>
+   <div class="info_center">
+    <div class="monster_wrape">
+      <div class="monster_dialog">
+        <!-- сообщение -->
+          <div class="md_massage" data-delay="324">
+            <div class="md_massage_close"></div>
+            Привет! Нажмите на осколок!
+            <!-- /кнопки -->
+          </div>
+        <!-- /сообщение -->
+      </div>
+        <a href="#" data-emotions="smile">
+      <div class="monster_box">
+        <div class="mb_ear mb_ear_l"></div>
+        <div class="mb_ear mb_ear_r"></div>
+        <div class="mb_eay mb_eay_l"></div>
+        <div class="mb_eay mb_eay_c"></div>
+        <div class="mb_eay mb_eay_r"></div>
+        <div class="monster_bottom"></div>
+        <div class="monster_mouth"></div>
+      </a>
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+     
+		<div class="body">
+			
+			<div class="zerkalo">
+         <a href="pages/osk1.html" class="osko1"><img src="img/осколок 11 1.svg" alt="" class=""></a>
+          <a href="pages/osk2.html" class="osko2"><img src="img/осколок 12 1.svg" alt=""></a>
+          <a href="pages/osk3.html" class="osko3"><img src="img/осколок 13 1.svg" alt="" class="osko32"></a>
+           <a href="pages/osk4.html" class="osko4"><img src="img/Слой 1 1.svg" alt="" class="osko32"></a>
+            <a href="pages/osk5.html" class="osko5"><img src="img/осколок 15 1.svg" alt="" class="osko32"></a>
+             <a href="pages/osk6.html" class="osko6"><img src="img/осколок 16 1.svg" alt="" class="osko32"></a>
+			</div>
+			
+	
+
+ 	<footer>
+ 			<div class="container">
+
+ 				<div class="footer">
+ 					<nav class="footer">
+ 						<ul class="footer-nav">
+							<p class="copyright">&copy; Все права защищены 2026</p>
+ 						</ul>
+ 					</nav>
+ 					<div class="footer-logo">
+ 						<img src="img/лого2.png" alt="logo">
+ 					</div>
+
+ 				</div>
+ 			</div>
+ 	</footer>
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+ <script type="text/javascript">
+  (function($) {
+  $(function() {
+  /* ============= smile monster ============= */
+     $('.md_massage').each(function() { //сообщения
+        var md_delay = $(this).data('delay');
+        var md_close = $(this).data('close');
+
+        if (md_delay != undefined && md_delay != '') { // если задано ожидание
+          $(this).delay(md_delay).fadeIn();
+        } else {
+          $(this).fadeIn();
+        }
+
+        if (md_close != undefined && md_close != '') { // если задано время закрытия
+          $(this).delay(md_close).fadeOut();
+        }
+
+     });
+     $('.ms_c_button').hover(function() { //кнопка
+        var emotions = $(this).data('emotions');
+        $('.monster_box').toggleClass('emotions_' + emotions);
+     });
+     $(".md_massage_close").click(function(){// закрытие
+        $('.md_massage').fadeOut();
+     });
+  })
+  })(jQuery)
+  </script>
+		
+</body>
+</html>

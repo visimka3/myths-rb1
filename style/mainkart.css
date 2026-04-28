@@ -1,0 +1,477 @@
+.OB1{
+  fill: #0D4285 
+}
+.P1{
+  fill: #0D4285 
+}
+.OB1:hover ~ .P1{
+  fill: white;
+}
+.T1{
+  font-weight: bold;
+}
+.OB1:hover ~ .T1{
+  fill: white;
+}
+/*2*/
+.OB2{
+  fill: #0D4285 
+}
+.P2{
+  fill: #0D4285 
+}
+.OB2:hover ~ .P2{
+  fill: white;
+}
+.T2{
+  font-weight: bold;
+}
+.OB2:hover ~ .T2{
+  fill: white;
+}
+/*3*/
+.OB3{
+  fill: #0D4285 
+}
+.P3{
+  fill: #0D4285 
+}
+.OB3:hover ~ .P3{
+  fill: white;
+}
+.T3{
+  font-weight: bold;
+}
+.OB3:hover ~ .T3{
+  fill: white;
+}
+/*4*/
+.OB4{
+  fill: #0D4285 
+}
+.P4{
+  fill: #0D4285 
+}
+.OB4:hover ~ .P4{
+  fill: white;
+}
+.T4{
+  font-weight: bold;
+}
+.OB4:hover ~ .T4{
+  fill: white;
+}
+/*5*/
+.OB5{
+  fill: #0D4285 
+}
+.P5{
+  fill: #0D4285 
+}
+.OB5:hover ~ .P5{
+  fill: white;
+}
+.T5{
+  font-weight: bold;
+}
+.OB5:hover ~ .T5{
+  fill: white;
+}
+input#search{
+  padding-top: 4px;
+  width: 200px;
+  height: 30px;
+  background: #fff;
+  border: none;
+  font-size: 14pt;
+  color: #000;
+  padding-left: 15px;
+  border-radius: 5px;
+
+}
+input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+.info_center {
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  z-index: 10;
+}
+.monster_wrape {
+  z-index: 10;
+  position:absolute;
+  height: 77px;
+  width: 52px;
+  font-family: "Arial";
+  right: 0px;
+  bottom: 0px;
+}
+.monster_dialog {
+  width: 260px;
+    position: absolute;
+      left: -205px;
+    bottom: 90px;
+    width: 240px;
+  z-index: 11;
+  padding-bottom:20px;
+}
+
+
+.md_massage {
+  background: #c7cbd0;
+  -o-border-radius: 5px;  
+    -moz-border-radius: 5px;
+    font-size: 14px;
+    -ms-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    border-radius: 5px; 
+    color: #000;
+    display: none;
+    margin-top: 10px;
+    padding: 13px;
+    padding-right: 27px;
+    position: relative;
+    border: 2px #a8b3c1 solid;
+}
+
+.md_massage:after, .md_massage:before {
+  right:30px;
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.md_massage:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #c7cbd0;
+  border-width: 15px;
+  margin-right: -15px;
+}
+.md_massage:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-top-color: #a8b3c1;
+  border-width: 18px;
+  margin-right: -18px;
+}
+
+.md_massage_close {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url("../img/dialog_close.png") 0 0;
+  width: 15px;
+  height: 15px;
+  top: 13px;
+  right: 13px;
+  cursor: pointer;
+}
+.dbi_social {
+  float: left;
+  margin-right: 5px;
+}
+.dbi_title {
+  margin-bottom: 10px;
+}
+.ms_c_buttons_box {
+  padding-top: 10px;
+}
+.ms_c_buttons_box::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.ms_c_button {
+  display: block;
+  float: left;
+  height: 35px;
+  padding: 0 15px;
+  font-weight: bold;
+  margin-right:5px;
+  -ms-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px; 
+    color: #fff;
+  line-height: 35px;
+  opacity: 1;
+   -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.ms_c_button.rad {
+  background: #de5151;
+}
+.ms_c_button.green {
+  background: #71aa74;
+}
+.ms_c_button.gray {
+  background: #353b49;
+}
+.ms_c_button:hover {
+  opacity: 0.7;
+  color: #fff;
+}
+
+
+.monster_bottom {
+  background: url("../img/monster_bt.png") repeat-x;
+  animation: monbottom 0.8s linear; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  position: absolute;
+  top: 62px;
+  width: 52px;
+  height: 6px;
+  left: 0px;
+}
+.monster_mouth {
+  width: 19px;
+  height: 3px;
+  top: 45px;
+  left: 18px;
+  -o-border-radius: 2px;  
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px; 
+    -webkit-border-radius: 2px; 
+    border-radius: 2px; 
+  position: absolute;
+  background: #fff;
+}
+
+
+
+.monster_box {
+  background: url("../img/monster_bg.png");
+  width: 52px;
+  height: 63px;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  position: absolute;
+}
+.mb_ear {
+  width: 29px;
+  height: 20px;
+  top: -4px;
+  position: absolute;
+   -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    
+}
+.mb_ear_l {
+  background: url("../img/monster_ear_l.png");
+    left: -13px;
+    animation: earl 0.9s; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.mb_ear_r {
+  right: -13px;
+  background: url("../img/monster_ear_r.png");
+  animation: earr 0.9s; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.mb_eay {
+  background: #4caf50;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  -o-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;  
+}
+.mb_eay_l {
+  animation: eay 0.5s; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+      top: 25px;
+    left: 10px;
+}
+.mb_eay_c {
+  animation: eaytop 0.5s; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+      top: 11px;
+    left: 21px;
+}
+.mb_eay_r {
+  animation: eay 0.5s; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+      top: 25px;
+    right: 8px;
+}
+
+/* =========== настроения =========== */
+
+/*bisy*/
+.monster_box.emotions_bisy  {
+  animation: emoanimbisy 0.2s linear; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+
+.monster_box.emotions_bisy .monster_mouth {
+  width: 11px;
+  height: 11px;
+  top: 46px;
+  left: 22px;
+  background: transparent;
+  border-top: 8px solid #fff;
+    border-radius: 100%;
+}
+
+/*smile*/
+.monster_box.emotions_smile  {
+  animation: emoanimsmile 0.2s linear; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.monster_box.emotions_smile .monster_mouth {
+  width: 11px;
+  height: 11px;
+  top: 36px;
+  left: 22px;
+  background: transparent;
+  border-bottom: 8px solid #fff;
+    border-radius: 100%;
+}
+
+/*fear*/
+.monster_box.emotions_fear  {
+  animation: emoanimfear 0.2s linear; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes emoanimfear {
+  from { left: 0px; }
+  to { left: 10px; }
+}
+.monster_box.emotions_fear .monster_mouth {
+  width: 11px;
+  height: 11px;
+  top: 46px;
+  left: 22px;
+  -o-border-radius: 100%; 
+    -moz-border-radius: 100%; 
+    -ms-border-radius: 100%;    
+    -webkit-border-radius: 100%;    
+    border-radius: 100%;  
+}
+
+/* =========== анимация =========== */
+@keyframes dibox {
+ from {
+ opacity: 0;
+ }
+ to {
+ opacity: 1;
+ }
+}
+@keyframes monbottom {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}
+
+@keyframes monstershow {
+0%{
+-webkit-transform:translate3d(100%,0,0) skewX(-30deg);transform:translate3d(100%,0,0) skewX(-30deg);opacity:0}
+60%{
+-webkit-transform:skewX(20deg);
+transform:skewX(20deg);
+opacity:1
+}
+80%{
+-webkit-transform:skewX(-5deg);
+transform:skewX(-5deg);
+opacity:1
+}
+100%{
+-webkit-transform:none;
+transform:none;
+opacity:1
+}
+}
+@keyframes monster {
+  from {
+  bottom: 0px;
+  }
+  to {
+   bottom: 10px;
+  }
+}
+@keyframes earl {
+  from {
+   transform: rotate(0deg);
+  }
+  to {
+   transform: rotate(50deg);
+  }
+}
+@keyframes earr {
+  from {
+   transform: rotate(0deg);
+  }
+  to {
+   transform: rotate(-50deg);
+  }
+}
+@keyframes eay {
+  from {
+    height: 10px;
+    top: 25px;
+  }
+  to {
+   height: 1px;
+   top: 29px;
+  }
+}
+@keyframes eaytop {
+  from {
+    height: 10px;
+    top: 11px;
+  }
+  to {
+   height: 1px;
+   top: 15px;
+  }
+}
+/*smile*/
+.monster_box.emotions_smile  {
+  animation: emoanimsmile 0.2s linear; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.monster_box.emotions_smile .monster_mouth {
+  width: 11px;
+  height: 11px;
+  top: 36px;
+  left: 22px;
+  background: transparent;
+  border-bottom: 8px solid #fff;
+    border-radius: 100%;
+}

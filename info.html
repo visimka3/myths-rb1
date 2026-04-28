@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<title>Мифы РБ</title>
+	
+	<link rel="stylesheet" type="text/css" href="style/main3.css">
+    
+	<link rel="stylesheet" type="text/javascript" href="js/main.js">
+
+	
+ 
+
+  <meta name="description" content="описание не длинее 155 символов">
+  <meta name="keywords" content="мета-теги, шаблон, html, css">
+ 
+ 
+
+</head>
+<body>
+		<header>
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<img src="img/лого2.png" alt="logo">
+				</div>
+				<nav>
+					<ul class="menu">
+							<li class="menu-item"><a href="index.html" class="meni-link">Главная</a></li>
+						<li class="menu-item"><a href="pages/osk1.html" class="meni-link">Зюзя</a></li>
+						<li class="menu-item"><a href="pages/osk2.html" class="meni-link">Свитезянка</a></li>
+						<li class="menu-item"><a href="pages/osk3.html" class="meni-link">Баламутень</a></li>
+						<li class="menu-item"><a href="pages/osk4.html" class="meni-link">Подпечник</a></li>
+						<li class="menu-item"><a href="pages/osk5.html" class="meni-link">Цмок</a></li>
+						<li class="menu-item"><a href="pages/osk6.html" class="meni-link">Лесавки</a></li>
+						<li class="menu-item"><a href="info.html" class="meni-link">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+  
+	</header>
+                                          <!--header 
+                                          body   !-->
+	<section>
+	
+		</div>
+		<div class="glav">
+          <div class="block">
+          	<div class="foto">
+          	<div class="ava"><img src="img/5d14aabfe658d-gomel-pan.jpg"></div>
+            </div>
+            <div class="name">            
+                      	<div class="info"><p>Гид по мифам Республики Беларусь</p>
+<p>Веб-разработчик: Трафименко Артем</p>
+<p>Дизайнер: Анищенков Андрей</p>
+<p>СШ №49 г.Гомеля</p>
+
+          	</div>
+            </div>
+          </div>
+		</div>
+	</section>
+                                         <!--body 
+                                         footer !-->
+	<footer>
+ 			<div class="container">
+
+ 				<div class="footer">
+ 					<nav class="footer">
+ 						<ul class="footer-nav">
+							<p class="copyright">&copy; Все права защищены 2026</p>
+ 						</ul>
+ 					</nav>
+ 					<div class="footer-logo">
+ 						<img src="img/лого2.png" alt="logo">
+ 					</div>
+
+ 				</div>
+ 			</div>
+ 	</footer>
+	<script src="../../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript">
+        (function($) {
+            $(function() {
+                /* ============= smile monster ============= */
+                $('.md_massage').each(function() { //сообщения
+                    var md_delay = $(this).data('delay');
+                    var md_close = $(this).data('close');
+
+                    if (md_delay != undefined && md_delay != '') { // если задано ожидание
+                        $(this).delay(md_delay).fadeIn();
+                    } else {
+                        $(this).fadeIn();
+                    }
+
+                    if (md_close != undefined && md_close != '') { // если задано время закрытия
+                        $(this).delay(md_close).fadeOut();
+                    }
+
+                });
+                $('.ms_c_button').hover(function() { //кнопка
+                    var emotions = $(this).data('emotions');
+                    $('.monster_box').toggleClass('emotions_' + emotions);
+                });
+                $(".md_massage_close").click(function(){// закрытие
+                    $('.md_massage').fadeOut();
+                });
+            })
+        })(jQuery)
+	</script>
+
+</body>
+</html>
